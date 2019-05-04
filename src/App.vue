@@ -1,13 +1,11 @@
 <template>
   <div id="app">
     <div class="container-left">
-    <PFHero v-bind:person="person">
-    </PFHero>
+    <PFHero v-bind:person="person"></PFHero>
+    <PFImformacion v-bind:person="person"></PFImformacion>
     </div>
     <div class="container-right">
-
     </div>
-    <!-- <h1> {{ person.data[0].picture }}</h1> -->
   </div>
 </template>
 
@@ -16,12 +14,14 @@ import axios from 'axios'
 import URL from './services/url.js'
 
 //Componenets
-import PFHero from '../src/components/hero.vue'
+import PFHero from '../src/components/Hero.vue'
+import PFImformacion from '../src/components/Informacion.vue'
 
 export default {
   name: 'app',
   components: {
-    PFHero
+    PFHero,
+    PFImformacion
   },
   data () {
     return { 
@@ -42,13 +42,8 @@ export default {
   margin: 0;
   padding: 0;
 }
-h1,
-  h2,
-    h3,
-    p,
-    li,
-    {
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+h1,h2,h3,p {
+  font-family: 'ABeeZee', sans-serif; 
 }
 p {
   font-size: 20px;

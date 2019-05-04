@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <figure>
-      <img v-bind:src="person.data[0].picture.large" alt="Hero imagen" >
+      <img v-bind:src=" person.data[0].picture.large " alt="Hero imagen" >
     </figure>
   </section>
 </template>
