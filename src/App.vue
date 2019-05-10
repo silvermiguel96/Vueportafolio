@@ -5,6 +5,7 @@
     <PFImformacion v-bind:person="person"></PFImformacion>
     </div>
     <div class="container-right">
+    <PFSobremi v-bind:person="person"></PFSobremi>
     </div>
   </div>
 </template>
@@ -16,12 +17,15 @@ import URL from './services/url.js'
 //Componenets
 import PFHero from '../src/components/Hero.vue'
 import PFImformacion from '../src/components/Informacion.vue'
+import PFSobremi from '../src/components/Sobremi.vue'
+
 
 export default {
   name: 'app',
   components: {
     PFHero,
-    PFImformacion
+    PFImformacion,
+    PFSobremi
   },
   data () {
     return { 
@@ -62,7 +66,9 @@ p {
   justify-content: center;
 }
 .container-right {
-  background-color: #000000;
-  width: 50%
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>
