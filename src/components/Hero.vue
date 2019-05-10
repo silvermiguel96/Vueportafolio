@@ -19,7 +19,7 @@ export default {
   }
 }
 </script>
-<style>
+<style >
 .hero {
   display: flex;
   height: 400px;

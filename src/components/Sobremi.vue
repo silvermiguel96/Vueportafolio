@@ -1,6 +1,6 @@
 <template>
   <div class="sobreMi">
-    <h3>Sobre Mi</h3>
+    <h2>Sobre Mi</h2>
     <p>{{ person.data[0].sobre}}</p>
   </div>
 </template> 
@@ -12,12 +12,12 @@ export default {
     } 
 };
 </script> 
-<style>
+<style scoped>
 .sobreMi {
   width: 80%;
   margin: 0 auto;
 }
-h3 {
+h2 {
   font-size: 2.5em;
   border-bottom: 1px solid green;
   color: green;

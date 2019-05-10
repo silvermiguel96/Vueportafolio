@@ -6,6 +6,7 @@
     </div>
     <div class="container-right">
     <PFSobremi v-bind:person="person"></PFSobremi>
+    <PFTrabajo v-bind:person="person"></PFTrabajo>
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import URL from './services/url.js'
 import PFHero from '../src/components/Hero.vue'
 import PFImformacion from '../src/components/Informacion.vue'
 import PFSobremi from '../src/components/Sobremi.vue'
+import PFTrabajo from '../src/components/Trabajo.vue'
 
 
 export default {
@@ -25,7 +27,8 @@ export default {
   components: {
     PFHero,
     PFImformacion,
-    PFSobremi
+    PFSobremi,
+    PFTrabajo
   },
   data () {
     return { 
