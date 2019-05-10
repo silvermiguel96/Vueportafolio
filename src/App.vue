@@ -7,6 +7,7 @@
     <div class="container-right">
     <PFSobremi v-bind:person="person"></PFSobremi>
     <PFTrabajo v-bind:person="person"></PFTrabajo>
+    <PFFooter></PFFooter>
     </div>
   </div>
 </template>
@@ -20,6 +21,7 @@ import PFHero from '../src/components/Hero.vue'
 import PFImformacion from '../src/components/Informacion.vue'
 import PFSobremi from '../src/components/Sobremi.vue'
 import PFTrabajo from '../src/components/Trabajo.vue'
+import PFFooter from '../src/components/Layout/Footer.vue'
 
 
 export default {
@@ -28,7 +30,8 @@ export default {
     PFHero,
     PFImformacion,
     PFSobremi,
-    PFTrabajo
+    PFTrabajo,
+    PFFooter
   },
   data () {
     return { 
